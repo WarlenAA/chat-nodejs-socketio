@@ -35,3 +35,13 @@ Para executar este projeto em sua máquina, siga os passos abaixo:
    git clone [https://github.com/WarlenAA/chat-nodejs-socketio.git](https://github.com/WarlenAA/chat-nodejs-socketio.git)
 
    
+## Comandos para atualização: 
+`git add .`
+
+---
+
+`git commit - m "sua mensagem de commit"`
+
+---
+
+`git push`
