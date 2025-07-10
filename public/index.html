@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="my-info">
+                <h3>Seu ID</h3>
+                <div id="my-id-container">
+                    <span id="my-id">Gerando...</span>
+                    <button id="copy-id-btn" title="Copiar ID">📋</button>
+                </div>
+                <input type="text" id="name-input" placeholder="Digite seu nome (opcional)">
+                <button id="set-name-btn">Definir Nome</button>
+            </div>
+            <div class="new-chat-section">
+                <h3>Iniciar Conversa</h3>
+                <input type="text" id="recipient-id-input" placeholder="ID do amigo">
+                <button id="connect-btn">Conectar</button>
+            </div>
+            <div class="chats-list-section">
+                <h3>Conversas</h3>
+                <ul id="chats-list">
+                    </ul>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <div id="welcome-screen" class="chat-window active">
+                <div class="content">
+                    <h2>Bem-vindo ao Chat Pessoal!</h2>
+                    <p>Defina um nome, se quiser, e use o painel à esquerda para iniciar uma nova conversa.</p>
+                    <p>Compartilhe seu ID com seus amigos para que eles possam se conectar com você.</p>
+                </div>
+            </div>
+            <div id="chat-window" class="chat-window">
+                <div class="chat-header">
+                    Conversando com <span id="chat-with-id"></span>
+                </div>
+                <div class="messages" id="messages-container">
+                    </div>
+                <div class="message-input-area">
+                    <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
+
