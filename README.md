@@ -30,18 +30,69 @@ O projeto foi construído com as seguintes tecnologias:
 
 Para executar este projeto em sua máquina, siga os passos abaixo:
 
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/WarlenAA/chat-nodejs-socketio.git](https://github.com/WarlenAA/chat-nodejs-socketio.git)
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/WarlenAA/chat-nodejs-socketio.git](https://github.com/WarlenAA/chat-nodejs-socketio.git)
+    ```
 
-   
-## Comandos para atualização: 
-`git add .`
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd chat-nodejs-socketio
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Acesse a aplicação:**
+    Abra seu navegador e acesse `http://localhost:3000`. Para testar o chat, abra uma segunda janela (pode ser anônima) no mesmo endereço.
+
+## 🔁 Enviando Atualizações (Workflow do Dia a Dia)
+
+Após fazer alterações no código, o processo para enviá-las ao GitHub é um ciclo simples. Ele garante que seu trabalho seja salvo localmente antes de ser enviado para o repositório remoto.
+
+**1. Adicione as Alterações**
+
+Use o comando abaixo para adicionar todos os arquivos modificados à "área de preparação" (Staging Area). Isso prepara o Git para registrar um "snapshot" das suas mudanças.
+
+```bash
+git add .
+```
+
+
+**2. Crie um "Commit"**
+
+O commit salva o "snapshot" das suas alterações no seu repositório local. É crucial escrever uma mensagem clara e descritiva sobre o que foi feito.
+
+```bash
+git commit -m "Descreva aqui a alteração feita, ex: 'Corrige bug na exibição do nome'"
+```
+
+**3. Envie para o GitHub**
+
+Finalmente, o `push` envia todos os seus commits locais (que ainda não estão no repositório remoto) para o GitHub, atualizando o projeto para todos.
+
+```bash
+git push
+```
+
+**Resumo do Fluxo**
+
+O ciclo básico que você usará 99% do tempo é:
+
+`git add .` → `git commit -m "mensagem"` → `git push`
 
 ---
 
-`git commit - m "sua mensagem de commit"`
+**✍️ Autor**
 
----
+***Warlen Adriano Alves***
 
-`git push`
+***GitHub: @WarlenAA***
+    
